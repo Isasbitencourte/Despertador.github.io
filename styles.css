@@ -1,0 +1,117 @@
+/* Reset de Estilos para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffc0cb; /* Rosa claro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Ajusta a largura para ocupar 90% da largura disponível */
+    max-width: 600px; /* Define uma largura máxima para melhorar a legibilidade */
+    text-align: center; /* Centraliza o conteúdo dentro da caixa */
+    margin-top: auto; /* Move a caixa para o centro vertical */
+    margin-bottom: auto; /* Move a caixa para o centro vertical */
+    height: 600px;
+    flex-direction: column; /* Coloca os elementos um abaixo do outro */
+    justify-content: center; /* Centraliza os elementos na vertical */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 36px; /* Ajustando o tamanho do título */
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+input[type="time"] {
+    margin-top: 20%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 300px; /* Limita a largura máxima para melhor legibilidade */
+}
+
+button {
+    background-color: #ff69b4; /* Rosa médio */
+    color: white;
+    padding: 12px 24px; /* Aumenta o padding do botão */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px; /* Aumenta o tamanho da fonte do botão */
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 300px; /* Limita a largura máxima para melhor legibilidade */
+}
+
+button:hover {
+    background-color: #ff5c9a; /* Rosa mais escuro no hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px; /* Espaçamento entre o botão e o histórico */
+}
+
+ul li {
+    font-size: 18px; /* Aumenta o tamanho da fonte do histórico */
+    margin-bottom: 10px; /* Espaçamento entre os itens do histórico */
+}
+
+#alarmHistory{
+    margin-left: 23.5%;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    overflow: auto; /* Adiciona barra de rolagem quando necessário */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        height: 500px;
+    }
+
+    h1 {
+        font-size: 28px; /* Ajusta o tamanho do título para telas menores */
+    }
+
+    input[type="time"] {
+        font-size: 14px;
+    }
+
+    #alarmHistory{
+        margin-left: 5%;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px; /* Ajusta o padding do botão para telas menores */
+    }
+
+    ul li {
+        font-size: 16px; /* Ajusta o tamanho da fonte do histórico para telas menores */
+        margin-bottom: 8px; /* Ajusta o espaçamento entre os itens do histórico para telas menores */
+    }
+}
